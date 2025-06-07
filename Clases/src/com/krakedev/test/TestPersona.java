@@ -1,4 +1,6 @@
-package com.krakedev;
+package com.krakedev.test;
+
+import com.krakedev.Persona;
 
 public class TestPersona {
 
@@ -7,6 +9,11 @@ public class TestPersona {
 		p = new Persona(); // 2. Instanciar un objeto Persona, referenciarlo con p
 
 		Persona p2 = new Persona();
+		Persona p3= new Persona("Pablo"); 
+		Persona p4= new Persona("Rocio",43,1.60);
+		System.out.println("nombre: " + p4.getNombre());
+		System.out.println("edad: " + p4.getEdad());
+		System.out.println("edad: " + p4.getEstatura());
 
 		// 3. Modificar los atributos
 		p.setNombre("Mario");
@@ -21,7 +28,7 @@ public class TestPersona {
 		p2.setNombre("Angelina");
 
 		System.out.println("*********");
-		System.out.println("p.nombre: " + p.getNombre());
+		System.out.println("p.nombre: " + p3.getNombre());
 		System.out.println("p2.nombre: " + p2.getNombre());
 
 	}
