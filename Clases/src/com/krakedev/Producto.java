@@ -6,6 +6,14 @@ public class Producto {
 	private double precio;
 	private int stockActual;
 	
+	public Producto(String nombre, String descripcion ,double precio, int stockActual) {
+		
+	}
+	
+	public Producto(String nombre, double precio, int stockActual) {
+		
+	}
+	
 	public String getNombre() {
 		return nombre;
 	}

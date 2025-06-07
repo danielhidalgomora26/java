@@ -3,9 +3,9 @@ package com.krakedev;
 public class TestProcuto {
 
 	public static void main(String[] args) {
-		Producto productoA=new Producto();
-		Producto productoB=new Producto();
-		Producto productoC=new Producto();
+		Producto productoA=new Producto("aspirina","calma el dolor de cabeza",1.50,20);
+		Producto productoB=new Producto("paracetamol","calma dolores fisicos",2.50,15);
+		Producto productoC=new Producto("carbamacepina",4.50,5);
 		
 		productoA.setNombre("aspirina");
 		productoA.setDescripcion("calma el dolor de cabeza");
