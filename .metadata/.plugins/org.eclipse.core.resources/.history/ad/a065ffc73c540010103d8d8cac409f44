@@ -1,0 +1,13 @@
+package com.krakedev.persistencia.utils;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Convertidor {
+	private static final String FORMATO_FECHA="yyyy/MM/dd";
+	private static final String FORMATO_HORA="hh:mm";
+	public static Date convertirADate () {
+		SimpleDateFormat sdf = new SimpleDateFormat(FORMATO_FECHA);
+		String fechaStr = "2022/03/22 10:05:04";
+	}
+}

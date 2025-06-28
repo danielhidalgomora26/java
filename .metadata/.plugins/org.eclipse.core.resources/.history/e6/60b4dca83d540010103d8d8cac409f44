@@ -1,0 +1,17 @@
+package com.krakedev.persistencia.test;
+
+import com.krakedev.persistencia.entidades.Persona;
+import com.krakedev.persistencia.servicios.AdminPersonas;
+import com.krakedev.persistencia.utils.Convertidor;
+
+public class TestAdminPersona {
+
+	public static void main(String[] args) {
+		Persona p=new Persona("1004421432","Dani","Hidalgo");
+		Convertidor.convertirFecha("2007/03/26");
+		p.setFechaNacimiento(null);
+		p.setHoraNacimiento(null);
+		AdminPersonas.insertar(new Persona("1004421432","Dani","Hidalgo"));
+	}
+
+}

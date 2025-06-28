@@ -1,0 +1,23 @@
+package com.krakedev.persistencia.utils;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class ConexionBDD {
+	private final String DRIVER="org.postgresql.Driver";
+	private final String URL="jdbc:postgresql://localhost:5432/postgres";
+	private final String USUARIO="postgres";
+	private final String CLAVE="DaniLocoMama26";
+	public Connection conectar () {
+		Connection connection=null;
+		try {	
+			Class.forName(DRIVER);
+			connection = DriverManager.getConnection(URL, USUARIO,
+					CLAVE);
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return connection;
+	}
+}

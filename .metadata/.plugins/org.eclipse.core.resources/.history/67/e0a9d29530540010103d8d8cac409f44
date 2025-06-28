@@ -1,0 +1,6 @@
+package com.krakedev.persistencia.entidades;
+
+public class EstadoCivil {
+	private String codigo;
+	private String descripcion;
+}

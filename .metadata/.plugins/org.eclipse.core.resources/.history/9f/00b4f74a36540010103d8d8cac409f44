@@ -1,0 +1,22 @@
+package com.krakedev.persistencia.servicios;
+
+import java.sql.Connection;
+
+import com.krakedev.persistencia.entidades.Persona;
+import com.krakedev.persistencia.utils.ConexionBDD;
+
+public class AdminPersonas {
+	public static void insertar(Persona persona) {
+		try {
+			Connection con=ConexionBDD.conectar();
+			System.out.println("insertar");
+		}catch(Exception e) {
+			//mostrar el error al usuario
+			System.out.println(e.getMessage());
+			//loggerat el error
+			e.printStackTrace();
+		}
+		
+		
+	}
+}
