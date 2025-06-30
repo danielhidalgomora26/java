@@ -1,0 +1,17 @@
+package com.krakedev.persistencia.test;
+
+import com.krakedev.persistencia.servicios.AdminPersonas;
+
+public class TestClavePrimaria {
+
+	public static void main(String[] args) {
+		try {
+			String cedula=AdminPersonas.buscarPorCedula("1004421432");
+			System.out.println(cedula);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+
+	}
+
+}

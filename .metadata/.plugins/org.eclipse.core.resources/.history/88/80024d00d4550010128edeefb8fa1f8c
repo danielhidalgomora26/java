@@ -1,0 +1,15 @@
+package com.krakedev.persistencia.test;
+
+import java.util.ArrayList;
+
+import com.krakedev.persistencia.entidades.Persona;
+import com.krakedev.persistencia.servicios.AdminPersonas;
+
+public class TestRegistros {
+
+	public static void main(String[] args) {
+		ArrayList<Persona> personas=AdminPersonas.buscarPersona("Dani", "Hidalgo", "1004421432");
+
+	}
+
+}
